@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "chatwithyourdatabse"
+version = "0.1.0"
+description = "Chat with your database"
+authors = ["roopsai <roopsai@outlook.in>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+streamlit = "^1.35.0"
+langchain-mistralai = "^0.1.8"
+langchain-community = "^0.2.5"
+python-dotenv = "^1.0.1"
+sqlalchemy = "^2.0.30"
+mysql-connector-python = "^8.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
