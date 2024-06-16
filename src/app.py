@@ -64,7 +64,7 @@ def get_response(user_query: str, db: SQLDatabase, chat_history: list):
   
   prompt = ChatPromptTemplate.from_template(template)
   
-  llm = ChatMistralAI(model="open-mixtral-8x7b")
+  llm = ChatGroq(model="Gemma-7b-lt")
   
   chain = (
     RunnablePassthrough.assign(query=sql_chain).assign(
