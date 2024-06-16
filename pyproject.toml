@@ -13,6 +13,7 @@ langchain-community = "^0.2.5"
 python-dotenv = "^1.0.1"
 sqlalchemy = "^2.0.30"
 mysql-connector-python = "^8.4.0"
+langchain-groq = "^0.1.5"
 
 
 [build-system]
