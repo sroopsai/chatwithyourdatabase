@@ -4,7 +4,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_community.utilities import SQLDatabase
 from langchain_core.output_parsers import StrOutputParser
-from langchain_community.chat_models import ChatGroq
+from langchain_groq import ChatGroq
 import streamlit as st
 
 def init_database(user: str, password: str, host: str, port: str, database: str) -> SQLDatabase:
