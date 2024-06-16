@@ -36,7 +36,7 @@ def get_sql_chain(db):
     
   prompt = ChatPromptTemplate.from_template(template)
   
-  llm = ChatGroq(model="Gemma-7b-lt")
+  llm = ChatGroq(model="llama3-8b-8192")
 
   
   def get_schema(_):
@@ -64,7 +64,7 @@ def get_response(user_query: str, db: SQLDatabase, chat_history: list):
   
   prompt = ChatPromptTemplate.from_template(template)
   
-  llm = ChatGroq(model="Gemma-7b-lt")
+  llm = ChatGroq(model="llama3-8b-8192")
   
   chain = (
     RunnablePassthrough.assign(query=sql_chain).assign(
